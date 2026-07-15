@@ -10,8 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
-    bacjkground-color: #ffffff;
+    padding: 0.225rem 1.25rem;
+    background-color: #ffffff;
 }
 
 .logo img {
@@ -26,7 +26,8 @@
 }
 .nav-center a,
 .nav-right a{
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
+    color: #333333; 
 }
 .nav-center a:hover,
 .nav-right a:hover{
