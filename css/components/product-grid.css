@@ -65,6 +65,7 @@
         "sneaker-white sneaker-white model sneaker-silver";
     gap: 30px;
 }
+
 .top1-content {
     position: absolute;
     left: 50%;
@@ -75,14 +76,14 @@
 
 }
 
-.card-title{
+.card-title {
     color: #ededed;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.card-subtitle{
+.card-subtitle {
     color: #ededed;
     font-size: 1.5rem;
     font-weight: 400;
@@ -91,7 +92,33 @@
 
 .cta-group {
     display: flex;
-    gap:10px;
+    gap: 10px;
 }
-    
-    
+
+@media (max-width:768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple";
+            max-width: 100%;
+            gap: 0.625rem;
+    }
+
+    .highlight {
+        min-height: 500px;
+    }
+
+    .model {
+        min-height: 370px;
+    }
+
+    .sneaker-white, .sneaker-purple {
+        min-height: 190px;
+    }   
+
+}
